@@ -14,6 +14,10 @@
 		222816341A2B288A005259E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222816331A2B288A005259E8 /* Images.xcassets */; };
 		222816371A2B288A005259E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222816351A2B288A005259E8 /* LaunchScreen.xib */; };
 		222816431A2B288A005259E8 /* GLBlender1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 222816421A2B288A005259E8 /* GLBlender1Tests.m */; };
+		2228164E1A2B2994005259E8 /* Cube.c in Sources */ = {isa = PBXBuildFile; fileRef = 2228164D1A2B2994005259E8 /* Cube.c */; };
+		222816511A2B2A12005259E8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2228164F1A2B2A12005259E8 /* GLKit.framework */; };
+		222816521A2B2A12005259E8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222816501A2B2A12005259E8 /* OpenGLES.framework */; };
+		22D5E8911A2B3AAD00CA2562 /* cube.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D5E8901A2B3AAD00CA2562 /* cube.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,11 @@
 		2228163C1A2B288A005259E8 /* GLBlender1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLBlender1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		222816411A2B288A005259E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222816421A2B288A005259E8 /* GLBlender1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLBlender1Tests.m; sourceTree = "<group>"; };
+		2228164C1A2B2977005259E8 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		2228164D1A2B2994005259E8 /* Cube.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Cube.c; sourceTree = "<group>"; };
+		2228164F1A2B2A12005259E8 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		222816501A2B2A12005259E8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		22D5E8901A2B3AAD00CA2562 /* cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222816511A2B2A12005259E8 /* GLKit.framework in Frameworks */,
+				222816521A2B2A12005259E8 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +77,8 @@
 				222816251A2B2889005259E8 /* GLBlender1 */,
 				2228163F1A2B288A005259E8 /* GLBlender1Tests */,
 				222816241A2B2889005259E8 /* Products */,
+				2228164F1A2B2A12005259E8 /* GLKit.framework */,
+				222816501A2B2A12005259E8 /* OpenGLES.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +102,8 @@
 				222816331A2B288A005259E8 /* Images.xcassets */,
 				222816351A2B288A005259E8 /* LaunchScreen.xib */,
 				222816261A2B288A005259E8 /* Supporting Files */,
+				2228164C1A2B2977005259E8 /* Cube.h */,
+				2228164D1A2B2994005259E8 /* Cube.c */,
 			);
 			path = GLBlender1;
 			sourceTree = "<group>";
@@ -96,6 +111,7 @@
 		222816261A2B288A005259E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				22D5E8901A2B3AAD00CA2562 /* cube.png */,
 				222816271A2B288A005259E8 /* Info.plist */,
 				222816281A2B288A005259E8 /* main.m */,
 			);
@@ -168,6 +184,7 @@
 				TargetAttributes = {
 					222816221A2B2889005259E8 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = V9QY8FVDZK;
 					};
 					2228163B1A2B288A005259E8 = {
 						CreatedOnToolsVersion = 6.1;
@@ -201,6 +218,7 @@
 			files = (
 				222816321A2B288A005259E8 /* Main.storyboard in Resources */,
 				222816371A2B288A005259E8 /* LaunchScreen.xib in Resources */,
+				22D5E8911A2B3AAD00CA2562 /* cube.png in Resources */,
 				222816341A2B288A005259E8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +239,7 @@
 			files = (
 				2228162F1A2B288A005259E8 /* ViewController.m in Sources */,
 				2228162C1A2B288A005259E8 /* AppDelegate.m in Sources */,
+				2228164E1A2B2994005259E8 /* Cube.c in Sources */,
 				222816291A2B288A005259E8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +433,7 @@
 				222816481A2B288A005259E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		222816491A2B288A005259E8 /* Build configuration list for PBXNativeTarget "GLBlender1Tests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +442,7 @@
 				2228164B1A2B288A005259E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
