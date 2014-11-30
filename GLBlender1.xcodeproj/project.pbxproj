@@ -49,6 +49,7 @@
 		2228164F1A2B2A12005259E8 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		222816501A2B2A12005259E8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		22D5E8901A2B3AAD00CA2562 /* cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube.png; sourceTree = "<group>"; };
+		22D5E8921A2B457000CA2562 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +112,7 @@
 		222816261A2B288A005259E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				22D5E8921A2B457000CA2562 /* README.md */,
 				22D5E8901A2B3AAD00CA2562 /* cube.png */,
 				222816271A2B288A005259E8 /* Info.plist */,
 				222816281A2B288A005259E8 /* main.m */,
